@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Выбери цвет</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background:#f2f2f2;
+}
+
+h1{
+    color:#36b36b;
+    margin-top:50px;
+}
+
+.container{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.circle{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.circle:hover{
+    transform:scale(1.1);
+}
+
+/* цвета */
+
+.red{background:#ff2b2b;}
+.green{background:#1ec95b;}
+.yellow{background:#ffc400; color:black;}
+.purple{background:#8c46ff;}
+.blue{background:#3478f6;}
+
+.pink{background:#ff2f92;}
+.black{background:#000;}
+.lightblue{background:#1ec1d6;}
+.gray{background:#6b7280;}
+.brown{background:#b45309;}
+
+</style>
+</head>
+
+<body>
+
+<h1>Привет, выбери цвет</h1>
+
+<div class="container">
+
+<div class="circle yellow">красный</div>
+<div class="circle red">зеленый</div>
+<div class="circle green">желтый</div>
+<div class="circle blue">фиолетовый</div>
+<div class="circle purple">синий</div>
+
+<div class="circle brown">розовый</div>
+<div class="circle pink">черный</div>
+<div class="circle black">голубой</div>
+<div class="circle lightblue">серый</div>
+<div class="circle gray">коричневый</div>
+
+</div>
+
+</body>
+</html>
